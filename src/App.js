@@ -10,7 +10,6 @@ class App extends Component {
   }
   authenticate(provider){
     firebase.auth().signInWithPopup(provider)
-    .then(this.authHandler)
     .catch(err => console.error(err))
   }
   signout(){
